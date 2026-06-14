@@ -1,0 +1,62 @@
+.scene {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-wrapper {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.actions {
+  display: flex;
+  gap: 30px;
+  opacity: 0;
+  animation: slideUpFade 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  animation-delay: 1.5s; /* Delay until speech bubble is shown */
+  position: relative;
+  z-index: 100;
+}
+
+.animate-up {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in forwards;
+  text-align: center;
+}
+
+.fade-in h2 {
+  font-size: 2.5rem;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .scene {
+    padding: 0 20px;
+  }
+  .avatar-wrapper {
+    margin-bottom: 40px;
+  }
+  .actions {
+    gap: 15px;
+  }
+  .fade-in h2 {
+    font-size: 1.8rem;
+  }
+}

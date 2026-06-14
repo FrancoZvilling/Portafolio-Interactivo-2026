@@ -1,0 +1,57 @@
+.panel-contact {
+  flex: 0 0 auto;
+  padding: 12px 15px !important;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.panel-contact .glass-panel-title {
+  margin-bottom: 8px !important;
+  font-size: 1.05rem !important;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 5px 0;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  transform: translateY(-5px) scale(1.15);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-btn.whatsapp:hover {
+  color: #25D366;
+  border-color: #25D366;
+  filter: drop-shadow(0 0 10px rgba(37, 211, 102, 0.5));
+}
+
+.contact-btn.email:hover {
+  color: #ea4335;
+  border-color: #ea4335;
+  filter: drop-shadow(0 0 10px rgba(234, 67, 53, 0.5));
+}
+
+.contact-btn.linkedin:hover {
+  color: #0077b5;
+  border-color: #0077b5;
+  filter: drop-shadow(0 0 10px rgba(0, 119, 181, 0.5));
+}
