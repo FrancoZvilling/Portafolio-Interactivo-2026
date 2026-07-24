@@ -34,7 +34,7 @@ const Dashboard = () => {
         <div className="dashboard-col col-left">
           <GlassPanel title="Personalidad y Gustos" accent="orange" className="panel-personality">
             <p className="personality-text">
-              Soy inteligente, muy curioso y creativo. Me apasiona imaginar, crear cosas nuevas e innovar planteando soluciones. Respeto mucho la ciencia y el método científico, aunque considero que la mente y el factor subjetivo son claves a la hora de trabajar y crear. Me guío fuertemente por la dignidad, el honor y la lealtad. Soy súper detallista y busco siempre que mi trabajo alcance su mejor versión. Tiendo a disfrutar trabajando solo, pero me adapto sin problemas al equipo si la misión lo requiere.
+              Soy una persona muy curiosa y creativa, apasionada por la innovación y la búsqueda de soluciones originales. Valoro profundamente la objetividad y el rigor del método científico, aunque entiendo que la intuición y el factor humano son piezas clave en cualquier proceso creativo. Me guío por una fuerte ética profesional, el compromiso y la integridad. Soy sumamente detallista y siempre busco la excelencia en cada entrega. Disfruto de la autonomía en mis proyectos, pero me desenvuelvo con facilidad y entusiasmo al colaborar dentro de un equipo cuando el objetivo lo requiere.
             </p>
           </GlassPanel>
 

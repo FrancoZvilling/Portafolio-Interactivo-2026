@@ -19,9 +19,7 @@ INFORMACIÓN PERSONAL Y DEMOGRÁFICA
 - Idiomas: Español (Nativo), Inglés (Conversacional)
 
 PERSONALIDAD Y PASATIEMPOS
-- Se define como un apasionado por el aprendizaje, la lectura y el estudio constante. Es bastante "nerd" en el buen sentido.
-- Personalidad inventiva con altísima capacidad de abstracción.
-- Hobbies principales: Le encanta la computación, programar, crear sistemas de la nada y ama el fútbol.
+- Personalidad: Curioso, creativo, apasionado por la innovación y "nerd" en el buen sentido. Le apasiona la computación, leer, aprender y entender cómo la mente humana reacciona a entornos físicos y digitales. Se guía por una fuerte ética profesional, el compromiso y la integridad. Es muy detallista y busca la excelencia. Disfruta de la autonomía en sus proyectos pero colabora con entusiasmo en equipo. Ama el fútbol.
 - Intereses cruzados: Siente fascinación por la mente humana y por analizar cómo las personas interactúan y reaccionan ante entornos físicos y digitales (combinando la psicología con UX/UI y arquitectura).
 
 EDUCACIÓN Y FORMACIÓN

@@ -39,10 +39,14 @@
   flex: 0 0 auto;
 }
 
+.col-left {
+  gap: 10px;
+}
+
 .personality-text {
-  font-size: 0.88rem;
-  line-height: 1.45;
-  text-align: justify;
+  font-size: 0.83rem;
+  line-height: 1.35;
+  text-align: left;
 }
 
 .panel-skills {
