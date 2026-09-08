@@ -226,10 +226,24 @@
 
 /* ================= VER MÁS TRABAJOS BOTÓN ================= */
 .more-projects-wrapper {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
   width: 100%;
+}
+
+.certifications-btn {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.3);
+  color: #a855f7;
+}
+
+.certifications-btn:hover {
+  background: rgba(168, 85, 247, 0.2);
+  border-color: #a855f7;
+  color: white;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
 }
 
 .view-more-btn {

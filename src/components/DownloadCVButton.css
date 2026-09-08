@@ -88,3 +88,157 @@
     font-size: 1rem;
   }
 }
+
+/* --- CV Modal Styles --- */
+.cv-modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cv-modal-content {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(245, 158, 11, 0.1);
+  position: relative;
+  overflow: hidden;
+  animation: modalScaleIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.cv-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cv-modal-close:hover {
+  background: #ef4444;
+  color: white;
+  transform: scale(1.1);
+}
+
+.cv-modal-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cv-modal-header h2 {
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  margin: 0 0 10px 0;
+  background: linear-gradient(135deg, var(--secondary-color), #fcd34d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cv-modal-header p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.cv-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cv-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+
+.cv-option-btn:hover {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.15);
+}
+
+.cv-option-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.cv-option-text {
+  flex: 1;
+}
+
+.cv-option-text h3 {
+  margin: 0 0 4px 0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  color: #f8fafc;
+}
+
+.cv-option-text span {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.cv-download-icon {
+  font-size: 1.2rem;
+  color: #64748b;
+  transition: color 0.3s ease;
+}
+
+.cv-option-btn:hover .cv-download-icon {
+  color: var(--secondary-color);
+}
+
+.cv-option-btn.downloading {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: #10b981;
+  pointer-events: none;
+}
+
+.cv-option-btn.downloading .cv-option-icon {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+.cv-option-btn.downloading .cv-download-icon {
+  color: #10b981;
+}

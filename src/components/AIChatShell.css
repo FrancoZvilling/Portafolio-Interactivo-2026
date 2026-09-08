@@ -1,6 +1,7 @@
 .ai-chat-shell {
   display: flex;
   flex-direction: column;
+  flex: 1;
   height: 100%;
   min-height: 0;
   background: rgba(15, 15, 25, 0.85);

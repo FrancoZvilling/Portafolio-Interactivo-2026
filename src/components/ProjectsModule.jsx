@@ -8,6 +8,7 @@ import { FaLaptopCode, FaSpaceShuttle, FaMobileAlt, FaArrowLeft, FaExternalLinkA
 import aeriLogo from '../assets/sonidos/iconos/aeri.png';
 import pilatesLogo from '../assets/sonidos/iconos/pilates.webp';
 import estudiaLogo from '../assets/sonidos/iconos/estudia.png';
+import CertificationsView from './CertificationsView';
 import './ProjectsModule.css';
 
 const DUMMY_PROJECTS = [
@@ -89,6 +90,17 @@ const ProjectsModule = () => {
     }, 800);
   };
 
+  const handleShowCertifications = () => {
+    playWoosh();
+    setIsExploding(true);
+    setTimeout(() => {
+      setViewState('certifications');
+    }, 400);
+    setTimeout(() => {
+      setIsExploding(false);
+    }, 800);
+  };
+
   return (
     <GlassPanel title="Experiencias y Proyectos" accent="cyan" className="panel-projects-module">
       <div className="projects-module-content">
@@ -134,6 +146,9 @@ const ProjectsModule = () => {
               <div className="more-projects-wrapper">
                 <button className="view-more-btn" onClick={handleShowMinorProjects}>
                   <FaTools className="btn-icon" /> Ver más trabajos
+                </button>
+                <button className="view-more-btn certifications-btn" onClick={handleShowCertifications}>
+                  <FaTools className="btn-icon" /> Ver certificaciones
                 </button>
               </div>
             </div>
@@ -192,6 +207,10 @@ const ProjectsModule = () => {
               </ul>
             </div>
           </div>
+        )}
+
+        {viewState === 'certifications' && (
+          <CertificationsView onBack={handleBackToGrid} />
         )}
 
       </div>

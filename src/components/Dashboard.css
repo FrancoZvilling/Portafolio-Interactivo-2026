@@ -23,7 +23,8 @@
   grid-template-columns: 320px 1fr 300px;
   gap: 15px;
   height: 100%;
-  max-width: 1800px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -40,12 +41,12 @@
 }
 
 .col-left {
-  gap: 10px;
+  justify-content: space-between;
 }
 
 .personality-text {
-  font-size: 0.83rem;
-  line-height: 1.35;
+  font-size: 0.9rem;
+  line-height: 1.45;
   text-align: left;
 }
 
