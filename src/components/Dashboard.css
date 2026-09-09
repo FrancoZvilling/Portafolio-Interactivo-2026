@@ -42,6 +42,11 @@
 
 .col-left {
   justify-content: space-between;
+  overflow-y: auto;
+}
+
+.col-left::-webkit-scrollbar {
+  display: none;
 }
 
 .personality-text {
